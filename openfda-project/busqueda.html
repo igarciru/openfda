@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BUSCADOR DE MEDICAMENTOS DE OPENFDA</title>
+  </head>
+  <body style="background:MediumSeaGreen">
+    <h0>En esta pagina podra buscar medicamentos procedentes del servicio gratuito openfda.</h0>
+    <h0>Para buscar un medicamento siga las instrucciones indicadas abajo</h0>
+    <h1>Lista de medicamentos a obtener</h1>
+    <form action="listDrugs" method="get">
+      Introduzca el numero de medicamentos que desee obtener:<input type="text" name="limit" value="">
+      <input type="submit" value="Busca medicamentos">
+    </form>
+    <h1>Obtener medicamentos concretos en base a sus componentes<h1>
+    <form action="searchDrug" method ="get">
+      Componente o principio activo:<input type="text" name="active_ingredient" value="">
+      Numero de medicamentos:<input type="text" name="limit" value="">
+      <input type="submit" value="Busca medicamentos con este componente">
+    </form>
+    <h1>Lista de empresas a obtener<h1>
+    <form action="listCompanies" method="get">
+      Introduzca el numero de empresas que desea obtener:<input type="text" name="limit" value="">
+      <input type="submit" value="Busca empresas">
+    </form>
+    <h1>Obtener empresas concretas<h1>
+    <form action="searchCompany" method="get">
+      Empresa de la que desea obtener el medicamento:<input type="text" name="openfda.manufacturer_name" value="">
+      Numero de medicamentos:<input type="text" name="limit" value="">
+      <input type="submit" value="Busca medicamentos de esta empresa">
+    </form>
 
+</html>
